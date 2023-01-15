@@ -18,7 +18,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: color5.withOpacity(0.05),
       body: getBody(),
     );
   }
@@ -32,7 +32,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
           Container(
             decoration: BoxDecoration(color: white, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.01),
+                color: color5.withOpacity(0.01),
                 spreadRadius: 10,
                 blurRadius: 3,
                 // changes position of shadow
@@ -105,7 +105,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: grey.withOpacity(0.01),
+                                color: color5.withOpacity(0.01),
                                 spreadRadius: 10,
                                 blurRadius: 3,
                                 // changes position of shadow
@@ -123,7 +123,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                                   height: 40,
                                   decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      color: grey.withOpacity(0.15)),
+                                      color: color5.withOpacity(0.15)),
                                   child: Center(
                                     child: Image.asset(
                                       categories[index]['icon'],

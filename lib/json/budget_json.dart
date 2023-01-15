@@ -6,20 +6,20 @@ const List budgetJson = [
     "price": "\$2250.00",
     "label_percentage": "45%",
     "percentage": 0.45,
-    "color": green
+    "color": color7
   },
   {
     "name": "Automobile",
     "price": "\$3000.00",
     "label_percentage": "70%",
     "percentage": 0.7,
-    "color": red
+    "color": color6
   },
   {
     "name": "Bank",
     "price": "\$4000.00",
     "label_percentage": "90%",
     "percentage": 0.9,
-    "color": blue
+    "color": color8
   }
 ];

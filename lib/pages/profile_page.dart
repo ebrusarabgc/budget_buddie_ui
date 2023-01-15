@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: color5.withOpacity(0.05),
       body: getBody(),
     );
   }
@@ -32,7 +32,7 @@ class _ProfilePageState extends State<ProfilePage> {
           Container(
             decoration: BoxDecoration(color: white, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.01),
+                color: color5.withOpacity(0.01),
                 spreadRadius: 10,
                 blurRadius: 3,
                 // changes position of shadow
@@ -69,7 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               quarterTurns: -2,
                               child: CircularPercentIndicator(
                                   circularStrokeCap: CircularStrokeCap.round,
-                                  backgroundColor: grey.withOpacity(0.3),
+                                  backgroundColor: color5.withOpacity(0.3),
                                   radius: 110.0,
                                   lineWidth: 6.0,
                                   percent: 0.53,

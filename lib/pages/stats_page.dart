@@ -19,7 +19,7 @@ class _StatsPageState extends State<StatsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: color5.withOpacity(0.05),
       body: getBody(),
     );
   }
@@ -30,13 +30,13 @@ class _StatsPageState extends State<StatsPage> {
     List expenses = [
       {
         "icon": Icons.arrow_back,
-        "color": blue,
+        "color": color8,
         "label": "Income",
         "cost": "\$6593.75"
       },
       {
         "icon": Icons.arrow_forward,
-        "color": red,
+        "color": color6,
         "label": "Expense",
         "cost": "\$2645.50"
       }
@@ -47,7 +47,7 @@ class _StatsPageState extends State<StatsPage> {
           Container(
             decoration: BoxDecoration(color: white, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.01),
+                color: color5.withOpacity(0.01),
                 spreadRadius: 10,
                 blurRadius: 3,
                 // changes position of shadow
@@ -140,7 +140,7 @@ class _StatsPageState extends State<StatsPage> {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: grey.withOpacity(0.01),
+                      color: color5.withOpacity(0.01),
                       spreadRadius: 10,
                       blurRadius: 3,
                       // changes position of shadow
@@ -206,7 +206,7 @@ class _StatsPageState extends State<StatsPage> {
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
-                          color: grey.withOpacity(0.01),
+                          color: color5.withOpacity(0.01),
                           spreadRadius: 10,
                           blurRadius: 3,
                           // changes position of shadow

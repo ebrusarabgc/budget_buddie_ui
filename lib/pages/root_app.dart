@@ -45,7 +45,7 @@ class _RootAppState extends State<RootApp> {
             onPressed: () {
               selectedTab(4);
             },
-            backgroundColor: Colors.pink,
+            backgroundColor: primary,
             child: const Icon(
               Icons.add,
               size: 25,

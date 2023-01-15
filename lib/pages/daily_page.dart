@@ -16,7 +16,7 @@ class _DailyPageState extends State<DailyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: color5.withOpacity(0.05),
       body: getBody(),
     );
   }
@@ -29,7 +29,7 @@ class _DailyPageState extends State<DailyPage> {
           Container(
             decoration: BoxDecoration(color: white, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.01),
+                color: color5.withOpacity(0.01),
                 spreadRadius: 10,
                 blurRadius: 3,
                 // changes position of shadow
@@ -130,7 +130,7 @@ class _DailyPageState extends State<DailyPage> {
                                   height: 50,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
-                                    color: grey.withOpacity(0.1),
+                                    color: color5.withOpacity(0.1),
                                   ),
                                   child: Center(
                                     child: Image.asset(
