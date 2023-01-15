@@ -1,8 +1,4 @@
-import '../pages/budget_page.dart';
-import '../pages/create_budge_page.dart';
-import '../pages/daily_page.dart';
-import '../pages/profile_page.dart';
-import '../pages/stats_page.dart';
+import 'pages.dart';
 import '../theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
