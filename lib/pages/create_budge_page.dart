@@ -1,7 +1,6 @@
-import '../json/create_budget_json.dart';
+import '../json/create_piggy_bank_json.dart';
 import '../theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 
 class CreateBudgetPage extends StatefulWidget {
   const CreateBudgetPage({Key? key}) : super(key: key);
@@ -10,11 +9,13 @@ class CreateBudgetPage extends StatefulWidget {
   _CreateBudgetPageState createState() => _CreateBudgetPageState();
 }
 
+// root copy paste
+
 class _CreateBudgetPageState extends State<CreateBudgetPage> {
   int activeCategory = 0;
-  final TextEditingController _budgetName =
-  TextEditingController(text: "Grocery Budget");
-  final TextEditingController _budgetPrice = TextEditingController(text: "\$1500.00");
+  final TextEditingController _piggyBankName =
+  TextEditingController(text: "Travelling");
+  final TextEditingController _piggyBankPrice = TextEditingController(text: "₺1500.00");
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,16 +46,17 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Create budget",
+                    children: const [
+                      Text(
+                        "Create Piggy Bank",
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: black),
                       ),
-                      Row(
-                        children: const [Icon(AntDesign.search1)],
+                      Spacer(),
+                      Icon(
+                        Icons.check,
                       )
                     ],
                   ),
@@ -78,7 +80,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-                children: List.generate(categories.length, (index) {
+                children: List.generate(createPiggyBankJson.length, (index) {
                   return GestureDetector(
                     onTap: () {
                       setState(() {
@@ -125,15 +127,14 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                                       shape: BoxShape.circle,
                                       color: color5.withOpacity(0.15)),
                                   child: Center(
-                                    child: Image.asset(
-                                      categories[index]['icon'],
-                                      width: 30,
-                                      height: 30,
-                                      fit: BoxFit.contain,
+                                    child: Icon(
+                                      createPiggyBankJson[index]['icon'],
+                                      size: 30,
+                                      color: createPiggyBankJson[index]['color'],
                                     ),
                                   )),
                               Text(
-                                categories[index]['name'],
+                                createPiggyBankJson[index]['name'],
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -156,14 +157,14 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "budget name",
+                  "Budget Name",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,
                       color: Color(0xff67727d)),
                 ),
                 TextField(
-                  controller: _budgetName,
+                  controller: _piggyBankName,
                   cursorColor: black,
                   style: const TextStyle(
                       fontSize: 17, fontWeight: FontWeight.bold, color: black),
@@ -189,7 +190,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                                 color: Color(0xff67727d)),
                           ),
                           TextField(
-                            controller: _budgetPrice,
+                            controller: _piggyBankPrice,
                             cursorColor: black,
                             style: const TextStyle(
                                 fontSize: 17,
@@ -201,21 +202,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                           ),
                         ],
                       ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Container(
-                      width: 50,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: primary,
-                          borderRadius: BorderRadius.circular(15)),
-                      child: const Icon(
-                        Icons.arrow_forward,
-                        color: white,
-                      ),
-                    ),
+                    )
                   ],
                 )
               ],

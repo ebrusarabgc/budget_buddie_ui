@@ -4,7 +4,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class ProfilePage extends StatefulWidget {
-
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
   _ProfilePageState createState() => _ProfilePageState();
@@ -12,8 +12,8 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final TextEditingController _email =
-  TextEditingController(text: "abbie_wilson@gmail.com");
-  TextEditingController dateOfBirth = TextEditingController(text: "04-19-1992");
+  TextEditingController(text: "eda.akin.ea@gmail.com");
+  TextEditingController dateOfBirth = TextEditingController(text: "10-12-1997");
   TextEditingController password = TextEditingController(text: "123456");
   @override
   Widget build(BuildContext context) {
@@ -85,7 +85,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     shape: BoxShape.circle,
                                     image: DecorationImage(
                                         image: NetworkImage(
-                                            "https://images.unsplash.com/photo-1531256456869-ce942a665e80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI4fHxwcm9maWxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"),
+                                            "https://media.licdn.com/dms/image/C4E03AQH8AbBW7h1rBQ/profile-displayphoto-shrink_400_400/0/1642196413771?e=1679529600&v=beta&t=SgpNblRiwdUE9CH73wqEWlIZQpyGmzmCG9kcNJnWoQQ&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"),
                                         fit: BoxFit.cover)),
                               ),
                             )
@@ -98,7 +98,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              "Abbie Wilson",
+                              "Eda Akın",
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -108,7 +108,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               height: 10,
                             ),
                             Text(
-                              "Credit score: 73.50",
+                              "Credit score: 85.20",
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -145,7 +145,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
                               Text(
-                                "United Bank Asia",
+                                "Ziraat Bank",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 12,
@@ -155,7 +155,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 10,
                               ),
                               Text(
-                                "\$2446.90",
+                                "₺3201.80",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,

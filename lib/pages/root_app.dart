@@ -14,11 +14,11 @@ class RootApp extends StatefulWidget {
 class _RootAppState extends State<RootApp> {
   int pageIndex = 0;
   List<Widget> pages = [
-    const DailyPage(),
-    StatsPage(),
-    const BudgetPage(),
-    ProfilePage(),
-    const CreateBudgetPage()
+    const MonthlyBudgetPlanPage(),
+    const SuggestionsPage(),
+    const PiggyBankPage(),
+    const ProfilePage(),
+    const CreateBudgetPage(),
   ];
 
   @override
@@ -44,6 +44,7 @@ class _RootAppState extends State<RootApp> {
             backgroundColor: primary,
             child: const Icon(
               Icons.add,
+              // TODO: Make this button to connect suggestions
               size: 25,
             )
           //params
@@ -62,8 +63,8 @@ class _RootAppState extends State<RootApp> {
   Widget getFooter() {
     List<IconData> iconItems = [
       Ionicons.md_calendar,
-      Ionicons.md_stats,
-      Ionicons.md_wallet,
+      Icons.lightbulb_outline,
+      FlutterIcons.pig_variant_mco,
       Ionicons.ios_person,
     ];
 
