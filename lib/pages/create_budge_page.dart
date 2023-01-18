@@ -9,12 +9,10 @@ class CreateBudgetPage extends StatefulWidget {
   _CreateBudgetPageState createState() => _CreateBudgetPageState();
 }
 
-// root copy paste
-
 class _CreateBudgetPageState extends State<CreateBudgetPage> {
   int activeCategory = 0;
   final TextEditingController _piggyBankName =
-  TextEditingController(text: "Travelling");
+  TextEditingController(text: "Gift");
   final TextEditingController _piggyBankPrice = TextEditingController(text: "₺1500.00");
   @override
   Widget build(BuildContext context) {

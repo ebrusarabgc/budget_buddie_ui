@@ -12,9 +12,10 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final TextEditingController _email =
-  TextEditingController(text: "eda.akin.ea@gmail.com");
-  TextEditingController dateOfBirth = TextEditingController(text: "10-12-1997");
+      TextEditingController(text: "someone@example.com");
+  TextEditingController dateOfBirth = TextEditingController(text: "12-34-0000");
   TextEditingController password = TextEditingController(text: "123456");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,11 +83,13 @@ class _ProfilePageState extends State<ProfilePage> {
                                 width: 85,
                                 height: 85,
                                 decoration: const BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                        image: NetworkImage(
-                                            "https://media.licdn.com/dms/image/C4E03AQH8AbBW7h1rBQ/profile-displayphoto-shrink_400_400/0/1642196413771?e=1679529600&v=beta&t=SgpNblRiwdUE9CH73wqEWlIZQpyGmzmCG9kcNJnWoQQ&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"),
-                                        fit: BoxFit.cover)),
+                                  shape: BoxShape.circle,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://www.pngmart.com/files/10/User-Account-PNG-Transparent-Image.png"),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             )
                           ],
@@ -98,7 +101,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              "Eda Akın",
+                              "Name Surname",
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -145,7 +148,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
                               Text(
-                                "Ziraat Bank",
+                                "My Bank",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 12,
@@ -210,7 +213,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 20,
                 ),
                 const Text(
-                  "Date of birth",
+                  "Date of Birth",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,
@@ -228,7 +231,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 20,
                 ),
                 const Text(
-                  "Date of birth",
+                  "Password",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,

@@ -1,4 +1,4 @@
-import 'package:budget_buddie/theme/colors.dart';
+import '../theme/colors.dart';
 import 'package:flutter/material.dart';
 
 const List createPiggyBankJson = [
